@@ -1,2 +1,7 @@
 # cmpt120Blaszczyk
-Lab work for Introduction to Programming
+
+Intoduction to programming - Lab Activities
+
+===========================================
+
+This repository contains my work for all Lab activities
