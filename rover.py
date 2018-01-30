@@ -7,7 +7,8 @@
 
 def mars():
     miles = 34000000
-    time = miles * (1/186000)
+    speed = 186000
+    time = miles * (1/speed)
     print("It will take the picture", time, "seconds to reach NASA from the Mars Curiosity Rover when it is 34 million miles away.")
 
 mars()
