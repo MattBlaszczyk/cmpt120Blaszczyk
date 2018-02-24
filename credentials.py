@@ -17,18 +17,24 @@ def username():
         firstN=firstName();
         lastN=lastName();
         username = firstN + "." + lastN
-        print("Your Marist username is: ", username)
-        password = input("Create a new password: ")
+        print("Your Marist username is: ", username.lower())
+        password = input("Create a password: ")
+        if len(password) >=8 and password.isupper():
+            print("The force is strong in this one…")
+            print("Account configured. Your new email address is",
+                username + "@marist.edu")
+            quit()
+        if password.islower() or len(password) <8:
+            print("Fool of a Took! That password is feeble!Please add uppercase letters or have the password be at least 8 characters!")
+            password = input("Try again, create a new password: ")
         if len(password) >=8:
             print("The force is strong in this one…")
             print("Account configured. Your new email address is",
-                  username + "@marist.edu")
-        elif len(password) <8:
-            print("Fool of a Took! That password is feeble! Create a passwords with at least 8 charcters!")
-            password = input("Create a new password: ")
-            if len(password) >=8:
-                print("The force is strong in this one…")
-                print("Account configured. Your new email address is",
-                  username + "@marist.edu")
+                username + "@marist.edu")
+            quit()
+        if password.islower() or len(password) <8:
+                print("Failure to make password, restart program")
+                quit()
+
 username()
 
