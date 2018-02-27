@@ -12,12 +12,16 @@ def main():
     print("The program is thinking of an animal...")
 
     while True:
-        name = input("Please try and guess the animal: ")
-        if name == "octopus":
+        name = input("Please guess the animal (If you wish to quit the game simply type, 'quit'): ")
+        if name.lower() == "octopus":
             print("Congratulations! You are correct.")
+            break
+        elif name.lower() == "quit":
+            print("You have quit the game")
             break
         else:
             print("Incorrect, Try Again")
+        
 main()
 
     
