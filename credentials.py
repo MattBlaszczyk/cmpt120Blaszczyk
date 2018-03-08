@@ -17,8 +17,11 @@ def username():
         firstN=firstName();
         lastN=lastName();
         username = firstN + "." + lastN
+        # JA: You should actually make the username lowercase
+        username = username.lower()
         print("Your Marist username is: ", username.lower())
         password = input("Create a password: ")
+        # JA: This you should move to it's own function
         if len(password) >=8 and password.isupper():
             print("The force is strong in this one…")
             print("Account configured. Your new email address is",
