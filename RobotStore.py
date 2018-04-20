@@ -1,3 +1,8 @@
+# Introduction to Programming - Lab 9
+# Author: Matt Blaszczyk
+# Date: 4/20/2018
+# RobotStore.py
+
 class Product:
     def __init__(self,name,price,quantity):
         self.name = name
