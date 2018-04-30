@@ -38,7 +38,8 @@ def main():
     
         prodId = int(vals[0])
         count = int(vals[1])
-    
+
+        # JA: This logic belongs within the Product class
         if products[prodId].quantity >= count:
             if cash >= products[prodId].price:
                 products[prodId].quantity -= count

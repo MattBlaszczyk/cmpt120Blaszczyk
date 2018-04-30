@@ -13,6 +13,8 @@
 
 # The two displays were created in which the bottom dispaly completes the arithmetic as the equation is elongated.  
 
+# JA: If you follow sequence 3 from the project it gives an error
+
 from graphics import *
 from button import Button
 import math

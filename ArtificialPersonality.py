@@ -2,7 +2,7 @@
 # Author: Matt Blaszczyk
 # Date: 4/13/2018
 # ArtificialPersonality.py
-
+# JA: What about the status expressions?
 from random import random
 
 def main():
